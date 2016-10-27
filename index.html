@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>HumaDex</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+html,
+body,
+.login-box {
+  height: 100%;
+
+}
+.top_div{
+	background-color: #bdbdbd;
+	
+	
+}
+html{
+	overflow: hidden;
+}
+
+#top_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background-color:#ef5350;
+ 
+
+  text-align:center;
+  background-repeat: no-repeat;
+    
+   background-attachment: fixed;
+   
+}
+
+
+
+  </style> 
+</head>
+
+<body>
+ 
+
+  
+
+<div id="top_div"></div>    
+
+ 
+
+  
+      <div class="valign-wrapper row login-box " >
+  <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4 ">
+    <form>
+      <div class="card-content " >
+       <h4 class = "center thin grey-text"> HumaDex </h4>
+        <div class="row">
+          <div class="input-field col s12">
+            <label for="email">Email address</label>
+            <input type="email" class="validate" name="email" id="email" />
+          </div>
+          <div class="input-field col s12">
+            <label for="password">Password </label>
+            <input type="password" class="validate" name="password" id="password" />
+          </div>
+        </div>
+      </div>
+      <div class="card-action center">
+     
+      
+        <input type="reset" id="reset" class="btn-flat grey-text waves-effect ">
+        <a href="dashboard.html" class="modal-action modal-close waves-effect waves-green btn red  ">Login</a>
+
+       	<button data-target="modal1" class="btn grey modal-trigger">Register</button>
+		
+        
+      
+    </form>
+  </div>
+</div>   
+  
+
+   
+  
+
+     
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    
+    
+    <div class="modal-content">
+      <div id="login-page" class="row">
+    
+      <form class="login-form">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <h4>Register</h4>
+            <p class="center"> Create a user account.</p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" type="text">
+            <label for="username" s>Username</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" type="email">
+            <label for="email" >Email</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password-again" type="password">
+            <label for="password-again">Password again</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="index.html" class="btn waves-effect waves-light col s12">Register Now</a>
+          </div>
+          <div class="input-field col s12">
+            <p class="margin center medium-small sign-up">Already have an account? <a href="index.html">Login</a></p>
+          </div>
+        </div>
+      </form>
+    
+  </div>
+     </div>
+    
+  
+  
+
+ 
+ 
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+  </script>
+
+  </body>
+</html>

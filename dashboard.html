@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>HumaDex</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+html,
+body,
+.login-box {
+  height: 100%;
+
+}
+.top_div{
+	background-color: #bdbdbd;
+	
+	
+}
+
+
+#top_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background-color:#ef5350;
+  z-index: -1;
+
+  text-align:center;
+  background-repeat: no-repeat;
+    
+   background-attachment: fixed;
+   
+}
+.inlineradio{
+  display: inline;
+  padding: 5px;
+}
+#firstnameinput,#lastnameinput,#professioninput,#classinput,#ageinput,#sexinput,#cityinput,#deptinput{
+  display: none;
+}
+
+
+
+  </style> 
+</head>
+
+<body>
+ 
+
+  
+
+<div id="top_div"></div>    
+
+
+  
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a  class ="active" href="#homesection">Home</a></li>
+        <li class="tab col s3"><a  href="#viewsection">View</a></li>
+        <li class="tab col s3"><a href="#addsection">Add</a></li>
+        <li class="tab col s3"><a href="index.html" target="_self">Log Out</a></li>
+      </ul>
+    </div>
+
+
+
+    <div id="homesection" class="col s12">
+<br><br>
+    
+          
+            
+            <div class = "row center">
+              <div class = "col s12">
+              <h3 class="white-text">Welcome to the HumaDex Dashboard.</h3>
+           </div>
+            </div>
+          
+    
+<div class ="container" >
+    <div class="row center" style=" padding : 2%;">
+        <div class="col s12 ">
+       
+            
+              <img src="http://combonetwork.com/img/empty_profile.png" class = " responsive-img circle"><br>
+              
+            
+            
+          
+        </div>
+      </div>
+
+       
+         <!-- Profile About Details  -->
+                <ul id="profile-page-about-details" class="collection z-depth-1">
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-action-wallet-travel"></i> First Name</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Gaelan</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-poll"></i> Last Name</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Harrington</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-domain"></i> Profession</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Student</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> Class</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Senior</div>
+                    </div>
+                  </li>
+
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> Age</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">23</div>
+                    </div>
+                  </li>
+
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> Sex</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Male</div>
+                    </div>
+                  </li>
+
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> City</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Baton Rouge, LA</div>
+                    </div>
+                  </li>
+
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> Dept</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">CSC</div>
+                    </div>
+                  </li>
+                </ul>
+                <!--/ Profile About Details  -->
+<br><br><br>
+
+      </div>
+
+       
+      
+
+
+
+    </div>
+    <div id="viewsection" class="col s12">
+<br><br>   
+            <div class = "row center">
+              <div class = "col s12">
+              <h3 class="white-text">View Current Entries</h3>
+           </div>
+            </div>
+
+<div class="container">
+  <div class = "card-panel">
+    <br><h5 style="text-align: center;" class="grey-text thin">Which of the following categories would you like to search?</h5><br><br>
+<div class= "center">
+<div class ="inlineradio">
+
+    
+      <input type="checkbox" id="option1"  name="firstname" value="firstname"/>
+      <label for="option1">First Name   </label>
+    
+    </div>
+
+   <div class ="inlineradio"> 
+    
+      <input type="checkbox" id="option2" name="lastname" value="lastname"/>
+      <label for="option2">Last Name</label>
+
+    </div>
+
+    <div class ="inlineradio">
+      
+      <input type="checkbox" id="option3" name="profession" value="profession"/>
+      <label for="option3">Profession</label>
+    </div>
+
+   <div class ="inlineradio"> 
+    
+      <input type="checkbox" id="option4" name="class" value="class" />
+      <label for="option4">Class</label>
+  
+</div>
+
+<div class ="inlineradio">
+
+    
+      <input type="checkbox" id="option5" name="age" value="age"/>
+      <label for="option5">Age   </label>
+    
+    </div>
+
+   <div class ="inlineradio"> 
+    
+      <input type="checkbox" id="option6" name="sex" value="sex"/>
+      <label for="option6">Sex</label>
+
+    </div>
+
+    <div class ="inlineradio">
+      
+      <input type="checkbox" id="option7" name="city" value="city" />
+      <label for="option7">City</label>
+    </div>
+
+   <div class ="inlineradio"> 
+    
+      <input type="checkbox" id="option8" name="dept" value="dept"/>
+      <label for="option8">Dept</label>
+  
+</div>
+
+</div>
+
+
+<br><br><br><h5 style="text-align: center;" class="grey-text thin">Enter in the details for the categories to search:</h5><br>
+
+<div class="input-field col s12 " id = "firstnameinput">
+
+    <input type="text" name="firstname"  >
+    <label>First Name</label>
+  </div>
+
+  <div class="input-field col s12" id = "lastnameinput">
+    <input type="text" name="lastname" >
+    <label>Last Name</label>
+  </div>
+
+<div class="input-field col s12" id = "professioninput">
+    <select>
+      <option value="" disabled selected>Select your Profession</option>
+      <option value="1">Student</option>
+      <option value="2">Teacher</option>
+      <option value="3">Other</option>
+    </select>
+    <label>Profession</label>
+  </div>
+
+  <div class="input-field col s12" id = "classinput">
+    <select>
+      <option value="" disabled selected>Select your Class</option>
+      <option value="1">Freshman</option>
+      <option value="2">Sophomore</option>
+      <option value="3">Junior</option>
+      <option value="3">Senior</option>
+    </select>
+    <label>Class</label>
+  </div>
+
+  <div class="input-field col s12" id = "ageinput">
+    <input type="number" name="age" value="">
+    <label>Age</label>
+  </div>
+
+<div class="input-field col s12" id = "sexinput">
+    <select>
+      <option value="" disabled selected>Select your Sex</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3">Other</option>
+    </select>
+    <label>Sex</label>
+  </div>
+
+  <div class="input-field col s12" id = "cityinput">
+    <input type="text" name="city" value="">
+    <label>City (ex: Baton Rouge,LA)</label>
+  </div>
+
+  <div class="input-field col s12" id = "deptinput">
+    <input type="text" name="major" value="">
+    <label>Dept (ex: CSC)</label>
+  </div>
+
+</div> 
+
+<div class="row">
+                        <div class="input-field col s12">
+                          <button class="btn red waves-effect waves-light right" type="submit" name="action">View
+                            <i class="mdi-content-send right"></i>
+                          </button>
+                        </div>
+                      </div>
+</div> <!--Card panel end-->
+
+                <!--/ Profile About Details  -->
+
+
+</div>
+
+
+<br><br><br>
+
+
+    </div>
+    <div id="addsection" class="col s12">
+    <br><br>   
+            <div class = "row center">
+              <div class = "col s12">
+              <h3 class="white-text">Add New Entries</h3>
+           </div>
+            </div>
+
+<div class="container">
+  <div class = "card-panel">
+    <br><br><h5 style="text-align: center;" class="grey-text thin">Fill in information to be added to the Database</h5>
+
+
+<div class="input-field col s12">
+
+    <input type="number" name="firstname" value="">
+    <label>First Name</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type="number" name="lastname" value="">
+    <label>Last Name</label>
+  </div>
+
+<div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Select your Profession</option>
+      <option value="1">Student</option>
+      <option value="2">Teacher</option>
+      <option value="3">Other</option>
+    </select>
+    <label>Profession</label>
+  </div>
+
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Select your Class</option>
+      <option value="1">Freshman</option>
+      <option value="2">Sophomore</option>
+      <option value="3">Junior</option>
+      <option value="3">Senior</option>
+    </select>
+    <label>Class</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type="number" name="age" value="">
+    <label>Age</label>
+  </div>
+
+<div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Select your Sex</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3">Other</option>
+    </select>
+    <label>Sex</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type="number" name="city" value="">
+    <label>City (ex: Baton Rouge,LA)</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type="number" name="dept" value="">
+    <label>Dept (ex: CSC)</label>
+  </div>
+
+</div> 
+
+<div class="row">
+                        <div class="input-field col s12">
+                          <button class="btn red waves-effect waves-light right" type="submit" name="action">Add Entry
+                            <i class="mdi-content-send right"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <br><br><br>
+</div> <!--Card panel end-->
+
+                <!--/ Profile About Details  -->
+
+
+</div>
+
+
+
+
+
+  
+
+    
+  
+  
+   
+  
+
+    
+  
+
+   
+  
+
+     
+
+  
+
+ 
+ 
+
+  <!--  Scripts-->
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+ $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+  <script>
+$("input[value='firstname']").click(function(){
+    if($(this).is(":checked")){
+       $("#firstnameinput").show();
+    }else{
+        $("#firstnameinput").hide();
+    }
+});
+
+$("input[value='lastname']").click(function(){
+    if($(this).is(":checked")){
+       $("#lastnameinput").show();
+    }else{
+        $("#lastnameinput").hide();
+    }
+});
+$("input[value='profession']").click(function(){
+    if($(this).is(":checked")){
+       $("#professioninput").show();
+    }else{
+        $("#professioninput").hide();
+    }
+});
+$("input[value='class']").click(function(){
+    if($(this).is(":checked")){
+       $("#classinput").show();
+    }else{
+        $("#classinput").hide();
+    }
+});
+$("input[value='age']").click(function(){
+    if($(this).is(":checked")){
+       $("#ageinput").show();
+    }else{
+        $("#ageinput").hide();
+    }
+});
+$("input[value='sex']").click(function(){
+    if($(this).is(":checked")){
+       $("#sexinput").show();
+    }else{
+        $("#sexinput").hide();
+    }
+});
+$("input[value='city']").click(function(){
+    if($(this).is(":checked")){
+       $("#cityinput").show();
+    }else{
+        $("#cityinput").hide();
+    }
+});
+$("input[value='dept']").click(function(){
+    if($(this).is(":checked")){
+       $("#deptinput").show();
+    }else{
+        $("#deptinput").hide();
+    }
+});
+  </script>
+
+  </body>
+</html>
