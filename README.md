@@ -7,7 +7,7 @@ Amanda Alfaro
 Brandon Mautz
 Yuki Fubar
 Gaelan Harrington
-Phillip Breland
+Phillip Breland Sucks
 Kam Smart
 Khaleel Harris
 Luke O'Quinn
