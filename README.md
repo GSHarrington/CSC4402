@@ -12,6 +12,6 @@ Kam Smart
 Khaleel Harris
 Luke O'Quinn
 Michelle Leger
-Vu Le
+Vu Le Sucks
 
 *If your name is misspelled don't be afraid to fix it! :)
