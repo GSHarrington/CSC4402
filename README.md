@@ -1,4 +1,4 @@
-# HumaDex
+# Myriad Online
 DBMS Web Project
 
 CSC 4402 - LSU Web Database Project
